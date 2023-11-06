@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577566141620",
+    "project_id": "rpi-assistant-fe714",
+    "storage_bucket": "rpi-assistant-fe714.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577566141620:android:1b5bd8fb11edb87d1abbe1",
+        "android_client_info": {
+          "package_name": "com.example.rpiassistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAk_U0p4QiHYd-eHldscr85CJpu1RxMxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
