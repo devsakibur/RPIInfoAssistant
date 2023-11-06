@@ -1,7 +1,8 @@
-package com.example.rpiassistant
+package com.example.rpiassistant.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.rpiassistant.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
