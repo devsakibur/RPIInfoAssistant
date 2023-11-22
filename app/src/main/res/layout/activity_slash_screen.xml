@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".view.SlashScreenActivity">
 
-
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:navGraph="@navigation/splash_nav_graph"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
+        android:layout_height="match_parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RPI Assistant</string>
+    <string name="app_name">RPI Info Assistant</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -11,4 +11,17 @@
     <string name="login_failed">"Login failed"</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="not_yet_registered">Not yet registered</string>
+    <string name="signup_now">\?SignUp Now</string>
+    <string name="sign_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="search_your_preffered_book">Search Your Preffered Book</string>
+    <string name="library">Library</string>
+    <string name="class_routine">Class Routine</string>
+    <string name="books_categoy">Books Categoy</string>
+    <string name="rpi">RPI INFO ASSISTANT is mainly designed and devloped to help the current student of Rangpur Polytechnic Institute.The main and basic two feature of this app is library book list authorised by the librarian and the daily class routine of every department and semester.This app is designed and devloped by a team of 5 talented student as well as programmer of Rangpur Polytechnic Institute from Computer Science and Technology department ,session 19-20.second shift,,they are ,</string>
 </resources>

@@ -2,6 +2,7 @@ package com.example.rpiassistant.view
 
 import android.animation.Animator
 import android.content.Context
+import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Bundle
@@ -13,6 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.rpiassistant.R
 import com.example.rpiassistant.databinding.FragmentSplashBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class SplashFragment : Fragment() {
 private lateinit var binding: FragmentSplashBinding
@@ -21,7 +23,7 @@ private lateinit var binding: FragmentSplashBinding
         savedInstanceState: Bundle?
     ): View {
        binding = FragmentSplashBinding.inflate(layoutInflater)
-
+        val auth = FirebaseAuth.getInstance()
 
         binding.animationView.playAnimation()
         binding.animationView.addAnimatorListener(object : Animator.AnimatorListener{
@@ -30,7 +32,17 @@ private lateinit var binding: FragmentSplashBinding
             }
 
             override fun onAnimationEnd(p0: Animator) {
-                findNavController().navigate(R.id.action_splashFragment_to_loginFragment)
+
+                // Check if a user is already signed in
+                if (auth.currentUser != null) {
+                    val intent = Intent(activity, MainActivity::class.java)
+                    startActivity(intent)
+                } else {
+                    findNavController().navigate(R.id.action_splashFragment_to_loginFragment)
+                }
+
+
+
 
             }
 
@@ -46,13 +58,8 @@ private lateinit var binding: FragmentSplashBinding
 
 
 
-        if (isInternetAvailable(requireContext())){
-
-
-
-        }else{
+        if (!isInternetAvailable(requireContext())){
             Toast.makeText(requireContext() , "No Internet Connection" , Toast.LENGTH_SHORT).show()
-
         }
 
 

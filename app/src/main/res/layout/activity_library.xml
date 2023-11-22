@@ -4,15 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.MainActivity">
+    tools:context=".view.LibraryActivity">
+
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/library_nav_graph"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/main_nav_graph" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

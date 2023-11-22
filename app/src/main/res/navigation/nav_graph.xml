@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/shiftFragment">
+
+    <fragment
+        android:id="@+id/shiftFragment"
+        android:name="com.example.rpiassistant.view.ShiftFragment"
+        android:label="fragment_shift"
+        tools:layout="@layout/fragment_shift" >
+        <action
+            android:id="@+id/action_shiftFragment_to_firstShiftFragment"
+            app:destination="@id/firstShiftFragment" />
+        <action
+            android:id="@+id/action_shiftFragment_to_secondShiftFragment"
+            app:destination="@id/secondShiftFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstShiftFragment"
+        android:name="com.example.rpiassistant.view.FirstShiftFragment"
+        android:label="fragment_first_shift"
+        tools:layout="@layout/fragment_first_shift" >
+        <action
+            android:id="@+id/action_firstShiftFragment_to_FShiftRoutineShowFragment"
+            app:destination="@id/FShiftRoutineShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondShiftFragment"
+        android:name="com.example.rpiassistant.view.SecondShiftFragment"
+        android:label="fragment_second_shift"
+        tools:layout="@layout/fragment_second_shift" >
+        <action
+            android:id="@+id/action_secondShiftFragment_to_SShiftRoutineShowFragment"
+            app:destination="@id/SShiftRoutineShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FShiftRoutineShowFragment"
+        android:name="com.example.rpiassistant.FShiftRoutineShowFragment"
+        android:label="fragment_f_shift_routine_show"
+        tools:layout="@layout/fragment_f_shift_routine_show" />
+    <fragment
+        android:id="@+id/SShiftRoutineShowFragment"
+        android:name="com.example.rpiassistant.view.SShiftRoutineShowFragment"
+        android:label="fragment_s_shift_routine_show"
+        tools:layout="@layout/fragment_s_shift_routine_show" />
+</navigation>
